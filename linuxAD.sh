@@ -82,12 +82,14 @@ read
 cabecalho;
 echo -e "\n\\033[42;1;37mInstalação de programas\n\n\033[0m"; 
 echo -e "\nSerão instalados os seguintes programas:\n\n";
-echo -e "\n\\033[42;1;37m1.\033[0m Chromium;";
-echo -e "\n\\033[42;1;37m2.\033[0m Google Chrome;";
+echo -e "\n\\033[42;1;37m1.\033[0m NTP;";
+echo -e "\n\\033[42;1;37m2.\033[0m Chromium;";
+echo -e "\n\\033[42;1;37m3.\033[0m Google Chrome;";
 
 echo -e "\n\nAperte <ENTER> para [continuar]"
 read
 
+apt-get install ntp		
 apt-get install chromium
 apt-get install google-chrome-stable 
 
